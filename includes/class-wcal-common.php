@@ -527,7 +527,7 @@ class wcal_common { // phpcs:ignore
 	 */
 	public static function wcal_check_and_replace_email_tag( $email_body_template, $results_template_value ) {
 		$coupon_code_to_apply = '';
-		if ( false !== stripos( $email_body_template, '{{coupon.code}}' ) ) {
+		if ( stripos( $email_body_template, '{{coupon.code}}' ) ) {
 			$discount_details['discount_expiry']      = $results_template_value->discount_expiry;
 			$discount_details['discount_type']        = $results_template_value->discount_type;
 			$discount_details['discount_shipping']    = $results_template_value->discount_shipping;

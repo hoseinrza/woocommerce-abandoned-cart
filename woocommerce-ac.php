@@ -158,7 +158,7 @@ if ( ! class_exists( 'woocommerce_abandon_cart_lite' ) ) {
 			$this->start_end_dates = array(
 				'yesterday'      => array(
 					'start_date' => date( 'd M Y', ( current_time( 'timestamp' ) - 24 * 60 * 60 ) ), // phpcs:ignore
-					'end_date'   => date( 'd M Y', ( current_time( 'timestamp' ) - 24 * 60 * 60 ) ), // phpcs:ignore
+					'end_date'   => date( 'd M Y', ( current_time( 'timestamp' ) - 7 * 24 * 60 * 60 ) ), // phpcs:ignore
 				),
 				'today'          => array(
 					'start_date' => date( 'd M Y', ( current_time( 'timestamp' ) ) ), // phpcs:ignore
@@ -612,8 +612,6 @@ if ( ! class_exists( 'woocommerce_abandon_cart_lite' ) ) {
 		 * @since 5.8.0
 		 */
 		public static function wcal_deactivate() {
-			wp_clear_scheduled_hook( 'wcal_clear_carts' );
-			wp_clear_scheduled_hook( 'woocommerce_ac_delete_coupon_action' );
 			if ( false !== as_next_scheduled_action( 'woocommerce_ac_send_email_action' ) ) {
 				as_unschedule_action( 'woocommerce_ac_send_email_action' ); // Remove the scheduled action.
 			}
@@ -4475,7 +4473,7 @@ if ( ! class_exists( 'woocommerce_abandon_cart_lite' ) ) {
 				$coupon_code           = isset( $_POST['coupon_code'][0] ) ? sanitize_text_field( wp_unslash( $_POST['coupon_code'][0] ) ) : '';
 				$discount_details      = array();
 				$coupon_code_to_apply  = '';
-				if ( false !== stripos( $body_email_preview, '{{coupon.code}}' ) ) {
+				if ( stripos( $body_email_preview, '{{coupon.code}}' ) ) {
 					$discount_details['discount_expiry']      = $discount_expiry;
 					$discount_details['discount_type']        = $discount_type;
 					$discount_details['discount_shipping']    = $discount_shipping;
@@ -4770,8 +4768,7 @@ if ( ! class_exists( 'woocommerce_abandon_cart_lite' ) ) {
 		public static function wcal_delete_expired_used_coupon_code() {
 
 			global $wpdb;
-			$is_cron = wp_doing_cron();
-			if ( ! $is_cron && ( ! current_user_can( 'manage_woocommerce' ) || ! isset( $_POST['ajax_nonce'] ) || ! wp_verify_nonce( sanitize_key( $_POST['ajax_nonce'] ), 'delete_expired_used_coupon_code' ) ) ) {
+			if ( ! current_user_can( 'manage_woocommerce' ) || ! isset( $_POST['ajax_nonce'] ) || ( isset( $_POST['ajax_nonce'] ) && ! wp_verify_nonce( sanitize_key( $_POST['ajax_nonce'] ), 'delete_expired_used_coupon_code' ) ) ) {
 				wp_send_json_error( 'Security check failed' );
 			}
 
@@ -4781,15 +4778,12 @@ if ( ! class_exists( 'woocommerce_abandon_cart_lite' ) ) {
 			$coupon_count    = count( $coupons );
 
 			if ( $coupon_count ) {
-				$coupons_ids = implode( ',', array_map( 'absint', $coupons ) );
+				$coupons_ids = implode( ',', $coupons );
 				$wpdb->query( "DELETE FROM {$wpdb->postmeta} WHERE post_id IN(" . $coupons_ids . ')' );//phpcs:ignore
 				$wpdb->query( "DELETE FROM {$wpdb->posts} WHERE ID IN(" . $coupons_ids . ')' );//phpcs:ignore
 			}
 
 			// translators: %1$s: Coupons Deleted, %2$s: Deleted coupons count'.
-			if ( $is_cron ) {
-				return;
-			}
 			wp_send_json_success( sprintf( __( '%1$s: %2$d', 'woo-cart-abandonment-recovery' ), 'Coupons Deleted', $coupon_count ) );
 		}
 

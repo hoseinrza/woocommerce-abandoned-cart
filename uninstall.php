@@ -16,8 +16,6 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 global $wpdb;
 
 wp_clear_scheduled_hook( 'woocommerce_ac_send_email_action' );
-wp_clear_scheduled_hook( 'wcal_clear_carts' );
-wp_clear_scheduled_hook( 'woocommerce_ac_delete_coupon_action' );
 
 if ( is_multisite() ) { // Multisite.
 
@@ -101,6 +99,8 @@ if ( is_multisite() ) { // Multisite.
 			$wpdb->get_results( 'DROP TABLE ' . $wpdb->prefix . 'ac_guest_abandoned_cart_history_lite' ); //phpcs:ignore
 
 			require_once ABSPATH . 'wp-admin/includes/upgrade.php';
+			$wpdb->get_results( "DELETE FROM `$wpdb->prefix" . "usermeta` WHERE meta_key = '_woocommerce_persistent_cart'" ); //phpcs:ignore
+
 			require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 			$wpdb->get_results( "DELETE FROM `$wpdb->prefix" . "usermeta` WHERE meta_key = '_woocommerce_ac_modified_cart'" ); //phpcs:ignore
 
@@ -122,6 +122,8 @@ if ( is_multisite() ) { // Multisite.
 	$wpdb->get_results( 'DROP TABLE ' . $wpdb->prefix . 'ac_guest_abandoned_cart_history_lite' ); //phpcs:ignore
 
 	require_once ABSPATH . 'wp-admin/includes/upgrade.php';
+	$wpdb->get_results( "DELETE FROM `$wpdb->prefix" . "usermeta` WHERE meta_key = '_woocommerce_persistent_cart'" ); //phpcs:ignore
+
 	require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 	$wpdb->get_results( "DELETE FROM `$wpdb->prefix" . "usermeta` WHERE meta_key = '_woocommerce_ac_modified_cart'" ); //phpcs:ignore
 
