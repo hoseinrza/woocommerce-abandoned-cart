@@ -4254,15 +4254,18 @@ if ( ! class_exists( 'woocommerce_abandon_cart_lite' ) ) {
 		 */
 		public function wcal_admin_footer_text( $footer_text ) {
 
-			if ( isset( $_GET['page'] ) && 'woocommerce_ac_page' === $_GET['page'] ) { // phpcs:ignore WordPress.Security.NonceVerification
+			$page = isset( $_GET['page'] ) ? sanitize_text_field( wp_unslash( $_GET['page'] ) ) : '';
+			$plugin_pages = array(
+				'woocommerce_abandoned_orders',
+				'woocommerce_abandoned_cart_email_template',
+				'woocommerce_abandoned_cart_setting',
+			);
+
+			if ( in_array( $page, $plugin_pages, true ) ) {
 				$footer_text = __( 'If you love <strong>Abandoned Cart Lite for WooCommerce</strong>, then please leave us a <a href="https://wordpress.org/support/plugin/woocommerce-abandoned-cart/reviews/?rate=5#new-post" target="_blank" class="ac-rating-link" data-rated="Thanks :)">★★★★★</a> rating. Thank you in advance. :)', 'woocommerce-abandoned-cart' );
 				wp_add_inline_script(
 					'jquery',
-					"
-						jQuery( 'a.ac-rating-link' ).click( function() {
-							jQuery( this ).parent().text( jQuery( this ).data( 'rated' ) );
-						});
-				"
+					"jQuery( 'a.ac-rating-link' ).on( 'click', function() { jQuery( this ).parent().text( jQuery( this ).data( 'rated' ) ); });"
 				);
 			}
 			return $footer_text;
