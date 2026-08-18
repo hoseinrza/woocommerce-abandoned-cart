@@ -32,7 +32,6 @@ require_once 'includes/admin/class-wcal-personal-data-eraser.php';
 require_once 'includes/admin/class-wcal-personal-data-export.php';
 require_once 'includes/admin/class-wcal-abandoned-cart-details.php';
 
-require_once 'includes/admin/class-wcap-pro-settings.php';
 require_once 'includes/wcal-functions.php';
 require_once 'includes/class-wcal-webhooks.php';
 
@@ -374,11 +373,8 @@ if ( ! class_exists( 'woocommerce_abandon_cart_lite' ) ) {
 		 * @hook init
 		 */
 		public static function wcal_add_component_file() {
-			if ( is_admin() ) {
-				if ( file_exists( plugin_dir_path( __FILE__ ) . 'includes/class-wcal-all-component.php' ) ) {
-					require_once 'includes/class-wcal-all-component.php';
-				}
-			}
+			// Pro upsell boilerplate is disabled to keep this plugin focused on the core abandoned cart functionality.
+			return;
 		}
 
 		/**
@@ -1579,11 +1575,7 @@ if ( ! class_exists( 'woocommerce_abandon_cart_lite' ) ) {
 		 */
 		public function wcal_admin_menu() {
 
-			$menu_title = sprintf(
-				'%s<span class="upgrade-to-pro-admin-menu">&nbsp;%s</span>',
-				__( 'Abandoned Carts', 'woocommerce-abandoned-cart' ),
-				__( 'Upgrade to Pro!', 'woocommerce-abandoned-cart' )
-			);
+			$menu_title = __( 'Abandoned Carts', 'woocommerce-abandoned-cart' );
 
 			$page = add_submenu_page(
 				'woocommerce',
@@ -3166,10 +3158,6 @@ if ( ! class_exists( 'woocommerce_abandon_cart_lite' ) ) {
 					<?php
 					$wcal_general_settings_class = '';
 					$wcal_email_setting          = '';
-					$wcap_sms_settings           = '';
-					$wcap_atc_settings           = '';
-					$wcap_fb_settings            = '';
-					$wcap_connectors             = '';
 
 					$section = isset( $_GET['wcal_section'] ) ? sanitize_text_field( wp_unslash( $_GET['wcal_section'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification
 					switch ( $section ) {
@@ -3179,18 +3167,6 @@ if ( ! class_exists( 'woocommerce_abandon_cart_lite' ) ) {
 							break;
 						case 'wcal_email_settings':
 							$wcal_email_setting = 'current';
-							break;
-						case 'wcap_sms_settings':
-							$wcap_sms_settings = 'current';
-							break;
-						case 'wcap_atc_settings':
-							$wcap_atc_settings = 'current';
-							break;
-						case 'wcap_fb_settings':
-							$wcap_fb_settings = 'current';
-							break;
-						case 'wcap_connectors':
-							$wcap_connectors = 'current';
 							break;
 						default:
 							$wcal_general_settings_class = 'current';
@@ -3202,19 +3178,7 @@ if ( ! class_exists( 'woocommerce_abandon_cart_lite' ) ) {
 								<a href="admin.php?page=woocommerce_ac_page&action=emailsettings&wcal_section=wcal_general_settings" class="<?php echo esc_attr( $wcal_general_settings_class ); ?>"><?php esc_html_e( 'General Settings', 'woocommerce-abandoned-cart' ); ?> </a> |
 							</li>
 							<li>
-								<a href="admin.php?page=woocommerce_ac_page&action=emailsettings&wcal_section=wcal_email_settings" class="<?php echo esc_attr( $wcal_email_setting ); ?>"><?php esc_html_e( 'Email Sending Settings', 'woocommerce-abandoned-cart' ); ?> </a> |
-							</li>
-							<li>
-								<a href="admin.php?page=woocommerce_ac_page&action=emailsettings&wcal_section=wcap_atc_settings" class="<?php echo esc_attr( $wcap_atc_settings ); ?>"><?php esc_html_e( 'Add To Cart Popup Editor', 'woocommerce-ac' ); ?> </a> |
-							</li>
-							<li>
-								<a href="admin.php?page=woocommerce_ac_page&action=emailsettings&wcal_section=wcap_fb_settings" class="<?php echo esc_attr( $wcap_fb_settings ); ?>"><?php esc_html_e( 'Facebook Messenger', 'woocommerce-ac' ); ?> </a> |
-							</li>
-							<li>
-								<a href="admin.php?page=woocommerce_ac_page&action=emailsettings&wcal_section=wcap_sms_settings" class="<?php echo esc_attr( $wcap_sms_settings ); ?>"><?php esc_html_e( 'SMS', 'woocommerce-ac' ); ?> </a> |
-							</li>
-							<li>
-								<a href="admin.php?page=woocommerce_ac_page&action=emailsettings&wcal_section=wcap_connectors" class="<?php echo esc_attr( $wcap_connectors ); ?>"><?php esc_html_e( 'Connectors', 'woocommerce-ac' ); ?> </a>
+								<a href="admin.php?page=woocommerce_ac_page&action=emailsettings&wcal_section=wcal_email_settings" class="<?php echo esc_attr( $wcal_email_setting ); ?>"><?php esc_html_e( 'Email Sending Settings', 'woocommerce-abandoned-cart' ); ?> </a>
 							</li>
 							<?php do_action( 'wcal_add_custom_settings_tab', $section ); ?>
 						</ul>
@@ -3240,15 +3204,6 @@ if ( ! class_exists( 'woocommerce_abandon_cart_lite' ) ) {
 								<?php submit_button(); ?>
 							</form>
 							<?php
-						} elseif ( 'wcap_atc_settings' === $section ) {
-							WCAP_Pro_Settings::wcap_atc_settings();
-						} elseif ( 'wcap_fb_settings' === $section ) {
-							WCAP_Pro_Settings::wcap_fb_settings();
-						} elseif ( 'wcap_sms_settings' === $section ) {
-							WCAP_Pro_Settings::wcap_sms_settings();
-						} elseif ( 'wcap_connectors' === $section ) {
-							WCAP_Pro_Settings::wcap_connectors();
-						}
 						do_action( 'wcal_add_custom_settings_tab_content', $section );
 						?>
 					</div>

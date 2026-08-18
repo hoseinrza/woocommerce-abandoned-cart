@@ -105,7 +105,7 @@ class WCAL_Abandoned_Orders_Table extends WP_List_Table {
 		$columns = array(
 			'cb'          => '<input type="checkbox" />',
 			'id'          => __( 'Id', 'woocommerce-abandoned-cart' ),
-			'email'       => __( 'Email Address', 'woocommerce-abandoned-cart' ),
+			'email'       => __( 'Billing Phone', 'woocommerce-abandoned-cart' ),
 			'customer'    => __( 'Customer', 'woocommerce-abandoned-cart' ),
 			'order_total' => __( 'Order Total', 'woocommerce-abandoned-cart' ),
 			'date'        => __( 'Abandoned Date', 'woocommerce-abandoned-cart' ),
@@ -159,7 +159,7 @@ class WCAL_Abandoned_Orders_Table extends WP_List_Table {
 		$row_actions        = array();
 		$value              = '';
 		$abandoned_order_id = 0;
-		if ( isset( $abandoned_row_info->email ) ) {
+		if ( isset( $abandoned_row_info->phone ) ) {
 			$abandoned_order_id = $abandoned_row_info->id;
 
 			$wcal_array = array(
@@ -182,8 +182,8 @@ class WCAL_Abandoned_Orders_Table extends WP_List_Table {
 				),
 				'abandoned_order_nonce'
 			) . '">' . __( 'Delete', 'woocommerce-abandoned-cart' ) . '</a>';
-			$email                 = $abandoned_row_info->email;
-			$value                 = $email . $this->row_actions( $row_actions );
+			$phone                 = $abandoned_row_info->phone;
+			$value                 = $phone . $this->row_actions( $row_actions );
 		}
 		return apply_filters( 'wcal_abandoned_orders_single_column', $value, $abandoned_order_id, 'email' );
 	}
@@ -499,12 +499,10 @@ class WCAL_Abandoned_Orders_Table extends WP_List_Table {
 
 			if ( 'GUEST' === $value->user_type ) {
 
-				if ( isset( $results_guest[0]->email_id ) ) {
-					$user_email = $results_guest[0]->email_id;
-				} elseif ( '0' === $value->user_id ) {
-					$user_email = '';
+				if ( isset( $results_guest[0]->phone ) && '' !== $results_guest[0]->phone ) {
+					$user_phone = $results_guest[0]->phone;
 				} else {
-					$user_email = '';
+					$user_phone = '';
 				}
 
 				if ( isset( $results_guest[0]->billing_first_name ) ) {
@@ -523,15 +521,12 @@ class WCAL_Abandoned_Orders_Table extends WP_List_Table {
 					$user_last_name = '';
 				}
 			} else {
-				$user_email_biiling = get_user_meta( $user_id, 'billing_email', true );
-				$user_email         = __( 'User Deleted', 'woocommerce-abandoned-cart' );
-				if ( isset( $user_email_biiling ) && '' === $user_email_biiling ) {
-					$user_data = get_userdata( $user_id );
-					if ( isset( $user_data->user_email ) && '' !== $user_data->user_email ) {
-						$user_email = $user_data->user_email;
-					}
-				} elseif ( '' !== $user_email_biiling ) {
-					$user_email = $user_email_biiling;
+				$user_billing_phone = get_user_meta( $user_id, 'billing_phone', true );
+				$user_phone         = '';
+				if ( '' !== $user_billing_phone ) {
+					$user_phone = $user_billing_phone;
+				} elseif ( false === get_userdata( $user_id ) ) {
+					$user_phone = __( 'User Deleted', 'woocommerce-abandoned-cart' );
 				}
 				$user_first_name_temp = get_user_meta( $user_id, 'billing_first_name', true );
 				if ( isset( $user_first_name_temp ) && '' === $user_first_name_temp ) {
@@ -613,7 +608,7 @@ class WCAL_Abandoned_Orders_Table extends WP_List_Table {
 					$abandoned_order_id                         = $abandoned_order_id;
 					$customer_information                       = $user_first_name . ' ' . $user_last_name;
 					$return_abandoned_orders[ $i ]->id          = $abandoned_order_id;
-					$return_abandoned_orders[ $i ]->email       = $user_email;
+					$return_abandoned_orders[ $i ]->phone       = $user_phone;
 					$return_abandoned_orders[ $i ]->customer    = $customer_information;
 					$return_abandoned_orders[ $i ]->order_total = $line_total;
 					$return_abandoned_orders[ $i ]->date        = $order_date;
