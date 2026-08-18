@@ -1,0 +1,1235 @@
+# Copyright (C) 2026 Tyche Softwares
+# This file is distributed under the same license as the Abandoned Cart Lite for WooCommerce plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Abandoned Cart Lite for WooCommerce 6.7.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-abandoned-cart\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Persian <fa@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-01-14T11:59:18+00:00\n"
+"PO-Revision-Date: 2026-08-18 00:00+0000\n"
+"Language: fa_IR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: woocommerce-abandoned-cart\n"
+
+#. Plugin Name of the plugin
+#: woocommerce-ac.php
+msgid "Abandoned Cart Lite for WooCommerce"
+msgstr "افزونه رایگان سبد خرید رهاشده برای ووکامرس"
+
+#. Plugin URI of the plugin
+#: woocommerce-ac.php
+msgid "http://www.tychesoftwares.com/store/premium-plugins/woocommerce-abandoned-cart-pro"
+msgstr ""
+
+#. Description of the plugin
+#: woocommerce-ac.php
+msgid "Track abandoned carts and send automated, customizable abandoned cart recovery emails. Reduce cart abandonment, recover lost revenue & increase sales."
+msgstr "سبدهای خرید رهاشده را پیگیری کنید و ایمیل‌های خودکار و قابل تنظیم برای بازیابی سبد خرید ارسال کنید. نرخ رهاسازی سبد خرید را کاهش دهید، درآمد ازدست‌رفته را بازیابی کنید و فروش را افزایش دهید."
+
+#. Author of the plugin
+#: woocommerce-ac.php
+msgid "Tyche Softwares"
+msgstr ""
+
+#. Author URI of the plugin
+#: woocommerce-ac.php
+msgid "http://www.tychesoftwares.com/"
+msgstr ""
+
+#: class-wcal-update.php:507
+msgid "There was an error creating the guest cart table for Abandoned Cart Lite for WooCommerce. Please contact the plugin author via <a href=\"mailto:support@tychesoftwares.com\">email</a>"
+msgstr "در ایجاد جدول سبد خرید مهمان برای افزونه رایگان سبد خرید رهاشده برای ووکامرس خطایی رخ داد. لطفاً از طریق <a href=\"mailto:support@tychesoftwares.com\">ایمیل</a> با نویسنده افزونه تماس بگیرید"
+
+#: cron/class-wcal-cron.php:98
+msgid "Abandoned cart reminder"
+msgstr "یادآوری سبد خرید رهاشده"
+
+#: cron/class-wcal-cron.php:289
+#: woocommerce-ac.php:3544
+#: woocommerce-ac.php:4379
+#: woocommerce-ac.php:4414
+msgid "Item"
+msgstr "کالا"
+
+#: cron/class-wcal-cron.php:290
+#: woocommerce-ac.php:3545
+#: woocommerce-ac.php:4380
+#: woocommerce-ac.php:4415
+msgid "Name"
+msgstr "نام"
+
+#: cron/class-wcal-cron.php:291
+#: includes/templates/emails/abandonment-notification.php:44
+#: woocommerce-ac.php:3546
+#: woocommerce-ac.php:4381
+#: woocommerce-ac.php:4416
+msgid "Quantity"
+msgstr "تعداد"
+
+#: cron/class-wcal-cron.php:292
+#: includes/templates/emails/abandonment-notification.php:45
+#: woocommerce-ac.php:4382
+#: woocommerce-ac.php:4417
+msgid "Price"
+msgstr "قیمت"
+
+#: cron/class-wcal-cron.php:293
+#: woocommerce-ac.php:3547
+#: woocommerce-ac.php:4383
+#: woocommerce-ac.php:4418
+msgid "Line Subtotal"
+msgstr "جمع جزء ردیف"
+
+#: cron/class-wcal-cron.php:300
+#: cron/class-wcal-cron.php:311
+#: woocommerce-ac.php:4377
+#: woocommerce-ac.php:4411
+msgid "Your Shopping Cart"
+msgstr "سبد خرید شما"
+
+#: cron/class-wcal-cron.php:338
+#: cron/class-wcal-cron.php:389
+msgid "SKU: "
+msgstr "شناسه کالا (SKU): "
+
+#: cron/class-wcal-cron.php:454
+#: woocommerce-ac.php:4403
+#: woocommerce-ac.php:4438
+msgid "Cart Total:"
+msgstr "جمع کل سبد خرید:"
+
+#: cron/class-wcal-cron.php:467
+msgid "Product no longer exists"
+msgstr "این محصول دیگر وجود ندارد"
+
+#. translators: Cart ID.
+#: includes/admin/class-wcal-abandoned-cart-details.php:437
+msgid "Cart #%s"
+msgstr "سبد خرید #%s"
+
+#: includes/admin/class-wcal-personal-data-eraser.php:46
+#: includes/admin/class-wcal-personal-data-export.php:45
+msgid "Abandoned & Recovered Carts"
+msgstr "سبدهای خرید رهاشده و بازیابی‌شده"
+
+#: includes/admin/class-wcal-personal-data-eraser.php:99
+msgid "No personal data found for any abandoned carts."
+msgstr "هیچ داده شخصی برای سبدهای خرید رهاشده یافت نشد."
+
+#. Translators: %s Abandoned Cart ID.
+#: includes/admin/class-wcal-personal-data-eraser.php:133
+msgid "Removed personal data from cart %s."
+msgstr "داده‌های شخصی از سبد خرید %s حذف شد."
+
+#. Translators: %s Abandoned Cart ID.
+#: includes/admin/class-wcal-personal-data-eraser.php:137
+msgid "Personal data within cart %s has been retained."
+msgstr "داده‌های شخصی موجود در سبد خرید %s حفظ شده است."
+
+#: includes/admin/class-wcal-personal-data-eraser.php:222
+msgid "ANONYMIZED"
+msgstr "ناشناس‌سازی‌شده"
+
+#: includes/admin/class-wcal-personal-data-export.php:137
+#: woocommerce-ac.php:1570
+#: woocommerce-ac.php:1576
+msgid "Abandoned Carts"
+msgstr "سبدهای خرید رهاشده"
+
+#: includes/admin/class-wcal-personal-data-export.php:186
+#: includes/admin/class-wcal-personal-data-export.php:202
+msgid "Abandoned Cart ID"
+msgstr "شناسه سبد خرید رهاشده"
+
+#: includes/admin/class-wcal-personal-data-export.php:187
+#: includes/admin/class-wcal-personal-data-export.php:203
+#: includes/classes/class-wcal-abandoned-orders-table.php:111
+msgid "Abandoned Date"
+msgstr "تاریخ رهاشدن"
+
+#: includes/admin/class-wcal-personal-data-export.php:188
+#: includes/admin/class-wcal-personal-data-export.php:204
+msgid "Abandoned Cart Status"
+msgstr "وضعیت سبد خرید رهاشده"
+
+#: includes/admin/class-wcal-personal-data-export.php:189
+#: includes/admin/class-wcal-personal-data-export.php:205
+msgid "Cart Total"
+msgstr "جمع کل سبد خرید"
+
+#: includes/admin/class-wcal-personal-data-export.php:190
+#: includes/admin/class-wcal-personal-data-export.php:206
+msgid "Items Present"
+msgstr "کالاهای موجود"
+
+#: includes/admin/class-wcal-personal-data-export.php:191
+msgid "Session ID"
+msgstr "شناسه نشست (Session)"
+
+#: includes/admin/class-wcal-personal-data-export.php:192
+#: includes/admin/class-wcal-personal-data-export.php:207
+msgid "Billing Address"
+msgstr "آدرس صورتحساب"
+
+#: includes/admin/class-wcal-personal-data-export.php:193
+#: includes/admin/class-wcal-personal-data-export.php:208
+#: includes/classes/class-wcal-abandoned-orders-table.php:108
+#: includes/classes/class-wcal-recover-orders-table.php:133
+msgid "Email Address"
+msgstr "آدرس ایمیل"
+
+#: includes/admin/class-wcal-personal-data-export.php:239
+#: includes/admin/class-wcal-personal-data-export.php:242
+msgid "Cart Recovered - Order #"
+msgstr "سبد خرید بازیابی‌شده - سفارش #"
+
+#: includes/admin/class-wcal-personal-data-export.php:239
+#: includes/classes/class-wcal-abandoned-orders-table.php:605
+msgid "Abandoned"
+msgstr "رهاشده"
+
+#: includes/admin/class-wcal-personal-data-export.php:242
+msgid "Abandoned but new cart created"
+msgstr "رهاشده اما سبد خرید جدیدی ایجاد شد"
+
+#: includes/admin/class-wcal-personal-data-export.php:245
+msgid "Abandoned - Unpaid Order #"
+msgstr "رهاشده - سفارش پرداخت‌نشده #"
+
+#: includes/blocks/class-wcal-gdpr-emails-blocks-integration.php:103
+#: includes/class-wcal-guest-ac.php:73
+#: includes/class-wcal-tracking-msg.php:72
+msgid "Saving your email and cart details helps us keep you up to date with this order."
+msgstr "ذخیره ایمیل و جزئیات سبد خرید شما به ما کمک می‌کند تا شما را از آخرین وضعیت این سفارش مطلع نگه داریم."
+
+#. Translators: Plugin Name and URL.
+#: includes/class-wcal-admin-notice.php:42
+msgid "The %1$s now uses the Action Scheduler library to send reminders. For further details, please visit <a href=\"%2$s\" target=\"_blank\">here</a>."
+msgstr "%1$s اکنون برای ارسال یادآوری‌ها از کتابخانه Action Scheduler استفاده می‌کند. برای اطلاعات بیشتر، لطفاً <a href=\"%2$s\" target=\"_blank\">اینجا</a> را مشاهده کنید."
+
+#: includes/class-wcal-admin-notice.php:69
+msgid "We need to update your email template database for some improvements. Please take a backup of your databases for your piece of mind."
+msgstr "برای اعمال برخی بهبودها، لازم است پایگاه داده قالب‌های ایمیل شما به‌روزرسانی شود. برای اطمینان خاطر، لطفاً از پایگاه داده خود پشتیبان تهیه کنید."
+
+#: includes/class-wcal-admin-notice.php:72
+msgid "Update"
+msgstr "به‌روزرسانی"
+
+#. Translators: Plugin Name and URL.
+#: includes/class-wcal-admin-notice.php:99
+msgid "Enabling this setting will allow users registered on the website to access it via reminder email links without needing to login, which may be a security vulnerability."
+msgstr "فعال‌سازی این تنظیم به کاربران ثبت‌نام‌شده در وب‌سایت اجازه می‌دهد بدون نیاز به ورود، از طریق پیوندهای ایمیل یادآوری به آن دسترسی داشته باشند، که ممکن است یک آسیب‌پذیری امنیتی باشد."
+
+#. translators: %1$s Link to Differences article, %2$s link to pro version
+#: includes/class-wcal-all-component.php:76
+msgid "Now that you are all set with the Lite version, you can upgrade to Pro version to take your abandoned cart recovery to the next level. You can capture  customer’s email address when they click Add to Cart, get access to 11 unique, fully responsive email templates, send text messages for recovery & <strong><a target=\"_blank\" href= \"%1$s\">much more</a></strong>. <strong><a target=\"_blank\" href= \"%2$s\">Purchase now</a></strong>."
+msgstr "اکنون که نسخه رایگان (Lite) را راه‌اندازی کرده‌اید، می‌توانید به نسخه پرو ارتقا دهید تا بازیابی سبد خرید رهاشده را به سطح بالاتری ببرید. می‌توانید آدرس ایمیل مشتری را در لحظه کلیک روی «افزودن به سبد خرید» ثبت کنید، به ۱۱ قالب ایمیل منحصربه‌فرد و کاملاً واکنش‌گرا دسترسی داشته باشید، پیامک بازیابی ارسال کنید و <strong><a target=\"_blank\" href= \"%1$s\">امکانات بیشتر</a></strong>. <strong><a target=\"_blank\" href= \"%2$s\">همین حالا خریداری کنید</a></strong>."
+
+#. translators: %s Link to Abandoned Cart Pro
+#: includes/class-wcal-all-component.php:80
+msgid "Boost your sales by recovering up to 60% of the abandoned carts with our Abandoned Cart Pro for WooCommerce plugin. You can capture customer email addresses right when they click the Add To Cart button. <strong><a target=\"_blank\" href= \"%s\"> Grab your copy of Abandon Cart Pro plugin now!</a></strong>"
+msgstr "با افزونه سبد خرید رهاشده پرو برای ووکامرس، فروش خود را با بازیابی تا ۶۰٪ از سبدهای خرید رهاشده افزایش دهید. می‌توانید آدرس ایمیل مشتری را دقیقاً در لحظه کلیک روی دکمه «افزودن به سبد خرید» ثبت کنید. <strong><a target=\"_blank\" href= \"%s\"> همین حالا نسخه پرو را تهیه کنید!</a></strong>"
+
+#. translators: %s Link to Abandoned Cart Pro
+#: includes/class-wcal-all-component.php:84
+msgid "Don't loose your sales to abandoned carts. Use our Abandon Cart Pro plugin & start recovering your lost sales in less then 60 seconds. <strong><a target=\"_blank\" href= \"%s\">Grab it now!</a></strong>."
+msgstr "اجازه ندهید فروش شما به‌خاطر سبدهای خرید رهاشده از دست برود. از افزونه سبد خرید پرو استفاده کنید و در کمتر از ۶۰ ثانیه بازیابی فروش‌های ازدست‌رفته را آغاز کنید. <strong><a target=\"_blank\" href= \"%s\">همین حالا تهیه کنید!</a></strong>."
+
+#. translators: %s Link to Abandoned Cart Pro
+#: includes/class-wcal-all-component.php:88
+msgid "Send Abandoned Cart reminders that actually convert. Take advantage of our fully responsive email templates designed specially with an intent to trigger conversion. <strong><a target=\"_blank\" href= \"%s\">Purchase now</a></strong>."
+msgstr "یادآوری‌های سبد خرید رهاشده‌ای ارسال کنید که واقعاً به فروش تبدیل می‌شوند. از قالب‌های ایمیل کاملاً واکنش‌گرای ما که ویژه افزایش نرخ تبدیل طراحی شده‌اند بهره‌مند شوید. <strong><a target=\"_blank\" href= \"%s\">همین حالا خریداری کنید</a></strong>."
+
+#. translators: Pro version link.
+#: includes/class-wcal-all-component.php:95
+msgid ""
+"Increase your store sales by recovering your abandoned carts for just $119. No profit sharing, no monthly fees. Our Abandoned Cart Pro plugin comes with a 30 day money back guarantee as well. :) Use coupon code ACPRO20 & save $24!<br>\n"
+"            <strong><a target=\"_blank\" href= \"%s\">Grab your copy now!</a></strong>"
+msgstr ""
+"فروش فروشگاه خود را با بازیابی سبدهای خرید رهاشده فقط با ۱۱۹ دلار افزایش دهید. بدون تسهیم سود، بدون هزینه ماهانه. افزونه سبد خرید پرو ما همچنین با ۳۰ روز ضمانت بازگشت وجه ارائه می‌شود. :) از کد تخفیف ACPRO20 استفاده کنید و ۲۴ دلار صرفه‌جویی کنید!<br>\n"
+"            <strong><a target=\"_blank\" href= \"%s\">همین حالا نسخه خود را تهیه کنید!</a></strong>"
+
+#. translators: %s Link to Order Delivery Date Pro
+#: includes/class-wcal-all-component.php:106
+msgid "Reduce cart abandonment rate by 57% with our Order Delivery Date Pro WooCommerce plugin. You can Create Delivery Settings by Shipping Zones & Shipping Classes. <br>Use discount code \"ORDPRO20\" and grab 20% discount on the purchase of the plugin. The discount code is valid only for the first 20 customers. <strong><a target=\"_blank\" href= \"%s\">Purchase now</a></strong>"
+msgstr "با افزونه تاریخ تحویل سفارش پرو برای ووکامرس، نرخ رهاسازی سبد خرید را تا ۵۷٪ کاهش دهید. می‌توانید تنظیمات تحویل را بر اساس مناطق و کلاس‌های ارسال ایجاد کنید. <br>از کد تخفیف «ORDPRO20» استفاده کنید و ۲۰٪ تخفیف برای خرید افزونه دریافت کنید. این کد تخفیف فقط برای ۲۰ مشتری اول معتبر است. <strong><a target=\"_blank\" href= \"%s\">همین حالا خریداری کنید</a></strong>"
+
+#. translators: Order Delivery Date Pro link.
+#: includes/class-wcal-all-component.php:113
+msgid ""
+"Allow your customers to select the Delivery Date on Single Product Page using our Product Delivery Date pro for WooCommerce Plugin. <br>\n"
+"            <strong><a target=\"_blank\" href= \"%s\">Shop now</a></strong> & be one of the 20 customers to get 20% discount on the plugin price. Use the code \"PRDPRO20\". Hurry!!"
+msgstr ""
+"به مشتریان خود اجازه دهید با استفاده از افزونه تاریخ تحویل محصول پرو برای ووکامرس، تاریخ تحویل را در صفحه تکی محصول انتخاب کنند. <br>\n"
+"            <strong><a target=\"_blank\" href= \"%s\">همین حالا خرید کنید</a></strong> و یکی از ۲۰ مشتری اول باشید که ۲۰٪ تخفیف روی قیمت افزونه دریافت می‌کنند. از کد «PRDPRO20» استفاده کنید. عجله کنید!!"
+
+#. translators: %s Link to WooCommerce Booking Plugin
+#: includes/class-wcal-all-component.php:124
+msgid "Allow your customers to book an appointment or rent an apartment with our Booking and Appointment for WooCommerce plugin. You can also sell your product as a resource or integrate with a few Vendor plugins. <br>Shop now & Save 20% on the plugin with the code \"BKAP20\". Only for first 20 customers. <strong><a target=\"_blank\" href= \"%s\">Have it now!</a></strong>"
+msgstr "به مشتریان خود اجازه دهید با افزونه رزرو و نوبت‌دهی برای ووکامرس، نوبت رزرو کنند یا یک آپارتمان اجاره کنند. همچنین می‌توانید محصول خود را به‌عنوان یک منبع بفروشید یا با چند افزونه فروشنده یکپارچه کنید. <br>همین حالا خرید کنید و با کد «BKAP20» ۲۰٪ تخفیف روی افزونه دریافت کنید. فقط برای ۲۰ مشتری اول. <strong><a target=\"_blank\" href= \"%s\">همین حالا تهیه کنید!</a></strong>"
+
+#. translators: Deposits for WC pro plugin link.
+#: includes/class-wcal-all-component.php:131
+msgid ""
+" Allow your customers to pay deposits on products using our Deposits for WooCommerce plugin. <br>\n"
+"            <strong><a target=\"_blank\" href= \"%s\">Purchase now</a></strong> & Grab 20% discount with the code \"DFWP20\". The discount code is valid only for the first 20 customers."
+msgstr ""
+" به مشتریان خود اجازه دهید با افزونه پیش‌پرداخت برای ووکامرس، برای محصولات پیش‌پرداخت بپردازند. <br>\n"
+"            <strong><a target=\"_blank\" href= \"%s\">همین حالا خریداری کنید</a></strong> و با کد «DFWP20» ۲۰٪ تخفیف دریافت کنید. این کد تخفیف فقط برای ۲۰ مشتری اول معتبر است."
+
+#: includes/class-wcal-common.php:168
+msgid "Database Updated Successfully"
+msgstr "پایگاه داده با موفقیت به‌روزرسانی شد"
+
+#: includes/class-wcal-common.php:183
+msgid "Database Update Failed. Please try again after sometime"
+msgstr "به‌روزرسانی پایگاه داده ناموفق بود. لطفاً کمی بعد دوباره تلاش کنید"
+
+#: includes/class-wcal-common.php:343
+msgid "This product no longer exists"
+msgstr "این محصول دیگر وجود ندارد"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:59
+msgid "abandoned_order_id"
+msgstr "abandoned_order_id"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:60
+msgid "abandoned_order_ids"
+msgstr "abandoned_order_ids"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:107
+msgid "Id"
+msgstr "شناسه"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:109
+msgid "Customer"
+msgstr "مشتری"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:110
+#: includes/classes/class-wcal-recover-orders-table.php:136
+msgid "Order Total"
+msgstr "جمع کل سفارش"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:112
+msgid "Status of Cart"
+msgstr "وضعیت سبد خرید"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:174
+#: includes/classes/class-wcal-abandoned-orders-table.php:748
+msgid "View order"
+msgstr "مشاهده سفارش"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:184
+#: includes/classes/class-wcal-abandoned-orders-table.php:788
+#: includes/classes/class-wcal-templates-table.php:175
+#: includes/classes/class-wcal-templates-table.php:365
+msgid "Delete"
+msgstr "حذف"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:527
+msgid "User Deleted"
+msgstr "کاربر حذف شد"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:597
+msgid "items"
+msgstr "مورد"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:599
+msgid "item"
+msgstr "مورد"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:603
+msgid "Unsubscribed"
+msgstr "لغو اشتراک شده"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:789
+msgid "Delete All Registered User Carts"
+msgstr "حذف همه سبدهای خرید کاربران ثبت‌نام‌شده"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:790
+msgid "Delete All Guest User Carts"
+msgstr "حذف همه سبدهای خرید کاربران مهمان"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:791
+msgid "Delete All Visitor Carts"
+msgstr "حذف همه سبدهای خرید بازدیدکنندگان"
+
+#: includes/classes/class-wcal-abandoned-orders-table.php:792
+msgid "Delete All Carts"
+msgstr "حذف همه سبدهای خرید"
+
+#: includes/classes/class-wcal-dashboard-report.php:113
+msgid "Recovered Amount"
+msgstr "مبلغ بازیابی‌شده"
+
+#: includes/classes/class-wcal-dashboard-report.php:118
+#: includes/classes/class-wcal-dashboard-report.php:167
+#: includes/classes/class-wcal-dashboard-report.php:202
+#: includes/classes/class-wcal-dashboard-report.php:237
+#: includes/classes/class-wcal-recover-orders-table.php:170
+msgid "View Details"
+msgstr "مشاهده جزئیات"
+
+#. translators: Count of carts recovered.
+#: includes/classes/class-wcal-dashboard-report.php:129
+msgid "<strong>%s</strong> Recovered Orders"
+msgstr "<strong>%s</strong> سفارش بازیابی‌شده"
+
+#. translators: recovered percent of carts.
+#: includes/classes/class-wcal-dashboard-report.php:136
+msgid "<strong>%s%%</strong> of Abandoned Carts Recovered"
+msgstr "<strong>%s%%</strong> از سبدهای خرید رهاشده بازیابی شد"
+
+#. translators: Percent of sales.
+#: includes/classes/class-wcal-dashboard-report.php:143
+msgid "<strong>%s%%</strong> of Total Revenue"
+msgstr "<strong>%s%%</strong> از کل درآمد"
+
+#: includes/classes/class-wcal-dashboard-report.php:162
+#: woocommerce-ac.php:2562
+msgid "Abandoned Orders"
+msgstr "سفارش‌های رهاشده"
+
+#. translators: Abandoned Orders amount.
+#: includes/classes/class-wcal-dashboard-report.php:178
+msgid "%s amount of Abandoned Orders"
+msgstr "مبلغ %s از سفارش‌های رهاشده"
+
+#: includes/classes/class-wcal-dashboard-report.php:197
+msgid "Number of Emails Sent"
+msgstr "تعداد ایمیل‌های ارسال‌شده"
+
+#. translators: Link to Purchase the Pro version of the plugin.
+#: includes/classes/class-wcal-dashboard-report.php:213
+msgid "Upgrade to <a href='%s' target='_blank'>Abandoned Cart Pro for WooCommerce</a> to view the number of emails opened and links clicked."
+msgstr "برای مشاهده تعداد ایمیل‌های بازشده و لینک‌های کلیک‌شده، به <a href='%s' target='_blank'>افزونه سبد خرید رهاشده پرو برای ووکامرس</a> ارتقا دهید."
+
+#: includes/classes/class-wcal-dashboard-report.php:232
+msgid "Emails Captured"
+msgstr "ایمیل‌های ثبت‌شده"
+
+#. translators: Number of guest emails captured.
+#: includes/classes/class-wcal-dashboard-report.php:248
+msgid "%s Guest emails captured."
+msgstr "%s ایمیل مهمان ثبت شد."
+
+#. translators: Link to Purchase the Pro version.
+#: includes/classes/class-wcal-dashboard-report.php:254
+msgid "Upgrade to <a href='%s' target='_blank'>Abandoned Cart Pro for WooCommerce</a> to capture more guest carts."
+msgstr "برای ثبت سبدهای خرید مهمان بیشتر، به <a href='%s' target='_blank'>افزونه سبد خرید رهاشده پرو برای ووکامرس</a> ارتقا دهید."
+
+#: includes/classes/class-wcal-dashboard-report.php:279
+msgid "This Month"
+msgstr "این ماه"
+
+#: includes/classes/class-wcal-dashboard-report.php:280
+msgid "Last Month"
+msgstr "ماه گذشته"
+
+#: includes/classes/class-wcal-dashboard-report.php:281
+msgid "This Quarter"
+msgstr "این فصل"
+
+#: includes/classes/class-wcal-dashboard-report.php:282
+msgid "Last Quarter"
+msgstr "فصل گذشته"
+
+#: includes/classes/class-wcal-dashboard-report.php:283
+msgid "This Year"
+msgstr "امسال"
+
+#: includes/classes/class-wcal-dashboard-report.php:284
+msgid "Last Year"
+msgstr "سال گذشته"
+
+#: includes/classes/class-wcal-dashboard-report.php:285
+msgid "Custom"
+msgstr "سفارشی"
+
+#: includes/classes/class-wcal-dashboard-report.php:300
+msgid "Select date range:"
+msgstr "بازه تاریخ را انتخاب کنید:"
+
+#: includes/classes/class-wcal-dashboard-report.php:320
+#: woocommerce-ac.php:3497
+msgid "Go"
+msgstr "برو"
+
+#: includes/classes/class-wcal-product-report-table.php:61
+msgid "product_id"
+msgstr "product_id"
+
+#: includes/classes/class-wcal-product-report-table.php:62
+msgid "product_ids"
+msgstr "product_ids"
+
+#: includes/classes/class-wcal-product-report-table.php:98
+msgid "Product Name"
+msgstr "نام محصول"
+
+#: includes/classes/class-wcal-product-report-table.php:99
+msgid "Number of Times Abandoned"
+msgstr "تعداد دفعات رهاشدن"
+
+#: includes/classes/class-wcal-product-report-table.php:100
+msgid "Number of Times Recovered"
+msgstr "تعداد دفعات بازیابی"
+
+#: includes/classes/class-wcal-recover-orders-table.php:90
+msgid "rec_abandoned_id"
+msgstr "rec_abandoned_id"
+
+#: includes/classes/class-wcal-recover-orders-table.php:91
+msgid "rec_abandoned_ids"
+msgstr "rec_abandoned_ids"
+
+#: includes/classes/class-wcal-recover-orders-table.php:132
+msgid "Customer Name"
+msgstr "نام مشتری"
+
+#: includes/classes/class-wcal-recover-orders-table.php:134
+msgid "Cart Abandoned Date"
+msgstr "تاریخ رهاشدن سبد خرید"
+
+#: includes/classes/class-wcal-recover-orders-table.php:135
+msgid "Cart Recovered Date"
+msgstr "تاریخ بازیابی سبد خرید"
+
+#: includes/classes/class-wcal-templates-table.php:57
+msgid "template_id"
+msgstr "template_id"
+
+#: includes/classes/class-wcal-templates-table.php:58
+msgid "template_ids"
+msgstr "template_ids"
+
+#: includes/classes/class-wcal-templates-table.php:99
+msgid "Sr"
+msgstr "ردیف"
+
+#: includes/classes/class-wcal-templates-table.php:100
+msgid "Name Of Template"
+msgstr "نام قالب"
+
+#: includes/classes/class-wcal-templates-table.php:101
+msgid "Sent After Set Time"
+msgstr "ارسال پس از زمان تعیین‌شده"
+
+#: includes/classes/class-wcal-templates-table.php:102
+msgid "Active ?"
+msgstr "فعال؟"
+
+#: includes/classes/class-wcal-templates-table.php:165
+msgid "Edit"
+msgstr "ویرایش"
+
+#: includes/classes/class-wcal-templates-table.php:215
+msgid "After Abandonment"
+msgstr "پس از رهاشدن"
+
+#: includes/classes/class-wcal-templates-table.php:338
+msgid "on"
+msgstr "فعال"
+
+#: includes/classes/class-wcal-templates-table.php:341
+msgid "off"
+msgstr "غیرفعال"
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:172
+msgid "I only needed the plugin for a short period."
+msgstr "فقط برای مدت کوتاهی به افزونه نیاز داشتم."
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:178
+msgid "I found a better plugin."
+msgstr "افزونه بهتری پیدا کردم."
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:180
+msgid "Please let us have the plugin's name so that we can make improvements"
+msgstr "لطفاً نام افزونه را در اختیار ما بگذارید تا بتوانیم بهبودهای لازم را انجام دهیم"
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:184
+msgid "The plugin is not working."
+msgstr "افزونه کار نمی‌کند."
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:186
+msgid "Please share what was faulty with the plugin so that we may get the issue fixed."
+msgstr "لطفاً بگویید مشکل افزونه چه بود تا بتوانیم آن را برطرف کنیم."
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:190
+msgid "Emails are not being sent to customers"
+msgstr "ایمیل‌ها برای مشتریان ارسال نمی‌شوند"
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:196
+msgid "I cannot see abandoned cart reminder emails records"
+msgstr "نمی‌توانم سوابق ایمیل‌های یادآوری سبد خرید رهاشده را ببینم"
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:202
+msgid "I want to upgrade the plugin to the Pro version"
+msgstr "می‌خواهم افزونه را به نسخه پرو ارتقا دهم"
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:208
+msgid "The plugin is great, but I need specific feature(s) that is not supported."
+msgstr "افزونه عالی است، اما به ویژگی(های) خاصی نیاز دارم که پشتیبانی نمی‌شود."
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:210
+msgid "What feature?"
+msgstr "چه ویژگی‌ای؟"
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:214
+msgid "I don't like to share my information with you."
+msgstr "نمی‌خواهم اطلاعاتم را با شما به اشتراک بگذارم."
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:220
+msgid "Other"
+msgstr "سایر"
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:234
+msgid "If you have a moment, please let us know why you are deactivating:"
+msgstr "اگر لحظه‌ای وقت دارید، لطفاً به ما بگویید چرا افزونه را غیرفعال می‌کنید:"
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:245
+msgid "Skip & Deactivate"
+msgstr "رد کردن و غیرفعال‌سازی"
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:246
+msgid "Submit & Deactivate"
+msgstr "ارسال و غیرفعال‌سازی"
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:247
+msgid "Cancel"
+msgstr "انصراف"
+
+#: includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php:260
+msgid "Please select a reason for deactivation!"
+msgstr "لطفاً دلیل غیرفعال‌سازی را انتخاب کنید!"
+
+#: includes/component/upgrade-to-pro/templates/upgrade-to-pro-page/upgrade-to-pro-modal.php:4
+msgid "Abandoned Cart Pro for WooCommerce is CHEAPER than you think"
+msgstr "افزونه سبد خرید رهاشده پرو برای ووکامرس ارزان‌تر از چیزی است که فکر می‌کنید"
+
+#: includes/component/upgrade-to-pro/templates/upgrade-to-pro-page/upgrade-to-pro-modal.php:5
+msgid "Upgrade from Lite to PRO with our Super Saver PRO Access Deal!"
+msgstr "با پیشنهاد ویژه دسترسی به نسخه پرو، از نسخه رایگان به پرو ارتقا دهید!"
+
+#: includes/component/upgrade-to-pro/templates/upgrade-to-pro-page/upgrade-to-pro-modal.php:6
+msgid "Unlock all premium features of Abandoned Cart Pro for WooCommerce without restrictions — all while staying within budget. Your store's success is one click away, so don't miss the Super Saver PRO Access Deal that can skyrocket your sales today!"
+msgstr "همه امکانات ویژه افزونه سبد خرید رهاشده پرو برای ووکامرس را بدون محدودیت و با بودجه‌ای مناسب باز کنید. موفقیت فروشگاه شما تنها یک کلیک فاصله دارد، پس این پیشنهاد ویژه دسترسی به نسخه پرو که می‌تواند همین امروز فروش شما را متحول کند، از دست ندهید!"
+
+#: includes/component/upgrade-to-pro/templates/upgrade-to-pro-page/upgrade-to-pro-modal.php:7
+msgid "Upgrade from lite to PRO at special pricing. Click the button below to <i>access the latest deals.</i>"
+msgstr "با قیمتی ویژه از نسخه رایگان به پرو ارتقا دهید. برای <i>دسترسی به جدیدترین پیشنهادها</i> روی دکمه زیر کلیک کنید."
+
+#: includes/component/upgrade-to-pro/templates/upgrade-to-pro-page/upgrade-to-pro-modal.php:10
+msgid "Your store was thriving with PRO - Why stop now?"
+msgstr "فروشگاه شما با نسخه پرو در حال رونق بود - چرا حالا متوقف شوید؟"
+
+#: includes/component/upgrade-to-pro/templates/upgrade-to-pro-page/upgrade-to-pro-modal.php:11
+msgid "Upgrade to Abandoned Cart Pro for WooCommerce"
+msgstr "ارتقا به افزونه سبد خرید رهاشده پرو برای ووکامرس"
+
+#: includes/component/upgrade-to-pro/templates/upgrade-to-pro-page/upgrade-to-pro-modal.php:12
+msgid "Reclaim the 20+ powerful features that were driving your growth. Upgrade to PRO again and continue unlocking your store's full potential. Without PRO you are missing out on -"
+msgstr "بیش از ۲۰ ویژگی قدرتمندی که موجب رشد شما می‌شدند را دوباره به دست آورید. دوباره به نسخه پرو ارتقا دهید و به باز کردن پتانسیل کامل فروشگاه خود ادامه دهید. بدون نسخه پرو، شما از موارد زیر محروم هستید -"
+
+#: includes/component/upgrade-to-pro/templates/upgrade-to-pro-page/upgrade-to-pro-modal.php:13
+msgid "<b><i>Don't miss out on what you were achieving - take action today! Click the button below to Upgrade to PRO.</i></b>"
+msgstr "<b><i>آنچه را که به دست آورده بودید از دست ندهید - همین امروز اقدام کنید! برای ارتقا به نسخه پرو روی دکمه زیر کلیک کنید.</i></b>"
+
+#: includes/component/upgrade-to-pro/ts-upgrade-to-pro.php:240
+#: includes/component/upgrade-to-pro/ts-upgrade-to-pro.php:241
+msgid "Upgrade to Pro"
+msgstr "ارتقا به پرو"
+
+#. translators: %s: Renew Link
+#: includes/component/upgrade-to-pro/ts-upgrade-to-pro.php:286
+msgid "Your Woo store is losing its WOW factor. Your Abandoned Cart Pro for WooCommerce license has expired. <a href=\"%s\" target=\"_blank\" class=\"button\">Renew Now</a>"
+msgstr "فروشگاه ووکامرس شما در حال از دست دادن جذابیت خود است. مجوز افزونه سبد خرید رهاشده پرو برای ووکامرس شما منقضی شده است. <a href=\"%s\" target=\"_blank\" class=\"button\">همین حالا تمدید کنید</a>"
+
+#. translators: %s: AC Trial Version Download page Link
+#: includes/component/upgrade-to-pro/ts-upgrade-to-pro.php:293
+msgid "Upgrade to the PRO version of Abandoned Cart Pro for WooCommerce plugin for $1! Enjoy all Pro features for 30 days at this insane price. Limited time offer <a href=\"%s\" class=\"button-primary button button-large\" target=\"_blank\"><b>Act now!</b></a>"
+msgstr "با فقط ۱ دلار به نسخه پرو افزونه سبد خرید رهاشده پرو برای ووکامرس ارتقا دهید! به مدت ۳۰ روز از تمام امکانات پرو با این قیمت باورنکردنی بهره‌مند شوید. پیشنهاد محدود <a href=\"%s\" class=\"button-primary button button-large\" target=\"_blank\"><b>همین حالا اقدام کنید!</b></a>"
+
+#: includes/frontend/class-wcal-checkout-process.php:219
+msgid "This order was abandoned & subsequently recovered."
+msgstr "این سفارش رها شده و سپس بازیابی شده است."
+
+#: includes/templates/emails/abandonment-notification.php:5
+msgid "Hi"
+msgstr "سلام"
+
+#. Translators: Site Name.
+#: includes/templates/emails/abandonment-notification.php:12
+msgid "We are writing to let you know that a cart has been abandoned on %s"
+msgstr "این پیام برای اطلاع‌رسانی است که یک سبد خرید در %s رها شده است"
+
+#. Translators: cart ID & Cart Abandonment Time.
+#: includes/templates/emails/abandonment-notification.php:23
+msgid "Cart #%1$s (%2$s)"
+msgstr "سبد خرید #%1$s (%2$s)"
+
+#. Translators: Cart Source.
+#: includes/templates/emails/abandonment-notification.php:33
+msgid "The cart was captured by %1$s"
+msgstr "این سبد خرید توسط %1$s ثبت شده است"
+
+#: includes/templates/emails/abandonment-notification.php:43
+msgid "Product"
+msgstr "محصول"
+
+#: includes/templates/emails/abandonment-notification.php:124
+#: woocommerce-ac.php:3773
+msgid "Customer Details"
+msgstr "جزئیات مشتری"
+
+#. Translators: Phone.
+#: includes/templates/emails/abandonment-notification.php:135
+msgid "Phone: %s"
+msgstr "تلفن: %s"
+
+#. Translators: Email.
+#: includes/templates/emails/abandonment-notification.php:140
+msgid "Email: %s"
+msgstr "ایمیل: %s"
+
+#. translators: link to the WP admin dashboard.
+#: includes/templates/emails/abandonment-notification.php:149
+msgid "You can check the cart details %s"
+msgstr "می‌توانید جزئیات سبد خرید را %s بررسی کنید"
+
+#. translators: link to the WP admin dashboard.
+#: includes/templates/emails/abandonment-notification.php:149
+msgid "here"
+msgstr "اینجا"
+
+#: views/wcal-email-coupon.php:24
+msgid "Generate unique coupon codes:"
+msgstr "تولید کدهای تخفیف منحصربه‌فرد:"
+
+#: views/wcal-email-coupon.php:61
+msgid "Discount Type:"
+msgstr "نوع تخفیف:"
+
+#: views/wcal-email-coupon.php:77
+msgid "Percentage discount"
+msgstr "تخفیف درصدی"
+
+#: views/wcal-email-coupon.php:78
+msgid "Fixed cart discount"
+msgstr "تخفیف ثابت سبد خرید"
+
+#: views/wcal-email-coupon.php:85
+msgid "Coupon amount:"
+msgstr "مبلغ کد تخفیف:"
+
+#: views/wcal-email-coupon.php:108
+msgid "Allow free shipping:"
+msgstr "اجازه ارسال رایگان:"
+
+#: views/wcal-email-coupon.php:126
+msgid "Check this box if the coupon grants free shipping. A free shipping method must be enabled in your shipping zone and be set to require \"a valid free shipping coupon\" (see the \"Free Shipping Requires\" setting)."
+msgstr "اگر این کد تخفیف امکان ارسال رایگان را فراهم می‌کند، این گزینه را علامت بزنید. باید یک روش ارسال رایگان در منطقه ارسال شما فعال باشد و روی «نیاز به کد تخفیف ارسال رایگان معتبر» تنظیم شده باشد (به تنظیم «الزامات ارسال رایگان» مراجعه کنید)."
+
+#: views/wcal-email-coupon.php:134
+msgid "Coupon validity:"
+msgstr "اعتبار کد تخفیف:"
+
+#: views/wcal-email-coupon.php:170
+msgid "The coupon code which will be sent in the reminder emails will be expired based the validity set here. E.g if the coupon code sent in the reminder email should be expired after 7 days then set 7 Day(s) for this option."
+msgstr "کد تخفیفی که در ایمیل‌های یادآوری ارسال می‌شود، بر اساس اعتبار تعیین‌شده در اینجا منقضی خواهد شد. برای مثال، اگر می‌خواهید کد تخفیف ارسالی در ایمیل یادآوری پس از ۷ روز منقضی شود، این گزینه را روی ۷ روز تنظیم کنید."
+
+#: views/wcal-email-coupon.php:177
+msgid "Individual use only:"
+msgstr "فقط استفاده انفرادی:"
+
+#: views/wcal-email-coupon.php:201
+msgid "OR"
+msgstr "یا"
+
+#: views/wcal-email-coupon.php:205
+msgid "Enter a coupon code to add into email:"
+msgstr "کد تخفیفی را برای افزودن به ایمیل وارد کنید:"
+
+#: views/wcal-email-coupon.php:261
+msgid "Search & select one coupon code that customers should use to get a discount.  Generated coupon code which will be sent in email reminder will have the settings of coupon selected in this option."
+msgstr "یک کد تخفیف را جستجو و انتخاب کنید که مشتریان برای دریافت تخفیف از آن استفاده کنند. کد تخفیف تولیدشده‌ای که در ایمیل یادآوری ارسال می‌شود، تنظیمات کد تخفیف انتخاب‌شده در این گزینه را خواهد داشت."
+
+#: woocommerce-ac.php:365
+#: woocommerce-ac.php:2576
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: woocommerce-ac.php:494
+msgid "Abandoned cart Email Template"
+msgstr "قالب ایمیل سبد خرید رهاشده"
+
+#: woocommerce-ac.php:816
+msgid "Cart Abandonment Settings"
+msgstr "تنظیمات رهاسازی سبد خرید"
+
+#: woocommerce-ac.php:823
+msgid "Enable abandoned cart emails"
+msgstr "فعال‌سازی ایمیل‌های سبد خرید رهاشده"
+
+#: woocommerce-ac.php:827
+msgid "Yes, enable the abandoned cart emails."
+msgstr "بله، ایمیل‌های سبد خرید رهاشده را فعال کن."
+
+#: woocommerce-ac.php:832
+msgid "Cart abandoned cut-off time"
+msgstr "زمان قطع برای تشخیص رهاسازی سبد خرید"
+
+#: woocommerce-ac.php:836
+msgid "Consider cart abandoned after X minutes of item being added to cart & order not placed."
+msgstr "پس از گذشت X دقیقه از افزودن کالا به سبد خرید و ثبت‌نشدن سفارش، سبد خرید را رهاشده در نظر بگیر."
+
+#: woocommerce-ac.php:841
+msgid "Automatically Delete Abandoned Orders after X days"
+msgstr "حذف خودکار سفارش‌های رهاشده پس از X روز"
+
+#: woocommerce-ac.php:845
+msgid "Automatically delete abandoned cart orders after X days."
+msgstr "سفارش‌های سبد خرید رهاشده را پس از X روز به‌صورت خودکار حذف کن."
+
+#: woocommerce-ac.php:850
+msgid "Email admin On Order Recovery"
+msgstr "اطلاع‌رسانی ایمیلی به مدیر هنگام بازیابی سفارش"
+
+#: woocommerce-ac.php:854
+msgid "Sends email to Admin if an Abandoned Cart Order is recovered."
+msgstr "در صورت بازیابی یک سفارش سبد خرید رهاشده، به مدیر ایمیل ارسال می‌کند."
+
+#: woocommerce-ac.php:859
+msgid "Email admin on cart abandonment"
+msgstr "اطلاع‌رسانی ایمیلی به مدیر هنگام رهاسازی سبد خرید"
+
+#: woocommerce-ac.php:863
+msgid "Enable this option to notify the store administrator when a cart is abandoned"
+msgstr "این گزینه را فعال کنید تا هنگام رهاشدن یک سبد خرید، به مدیر فروشگاه اطلاع داده شود"
+
+#: woocommerce-ac.php:868
+msgid "Start tracking from Cart Page"
+msgstr "شروع پیگیری از صفحه سبد خرید"
+
+#: woocommerce-ac.php:872
+msgid "Enable tracking of abandoned products & carts even if customer does not visit the checkout page or does not enter any details on the checkout page like Name or Email. Tracking will begin as soon as a visitor adds a product to their cart and visits the cart page."
+msgstr "پیگیری محصولات و سبدهای خرید رهاشده را حتی در صورتی که مشتری به صفحه پرداخت مراجعه نکند یا جزئیاتی مانند نام یا ایمیل را در صفحه پرداخت وارد نکند، فعال کنید. پیگیری به‌محض اینکه بازدیدکننده محصولی را به سبد خرید خود اضافه کرده و به صفحه سبد خرید مراجعه کند، آغاز می‌شود."
+
+#: woocommerce-ac.php:877
+msgid "GDPR Settings"
+msgstr "تنظیمات GDPR"
+
+#: woocommerce-ac.php:884
+msgid "Enable GDPR Notice"
+msgstr "فعال‌سازی اعلان GDPR"
+
+#: woocommerce-ac.php:888
+msgid "Enable this setting to display a notice informing customers that their email and cart data are saved to send abandonment reminders."
+msgstr "این تنظیم را فعال کنید تا اعلانی نمایش داده شود که به مشتریان اطلاع می‌دهد ایمیل و اطلاعات سبد خرید آن‌ها برای ارسال یادآوری‌های رهاسازی ذخیره می‌شود."
+
+#: woocommerce-ac.php:893
+msgid "Message to be displayed for Guest users when tracking their carts"
+msgstr "پیامی که هنگام پیگیری سبد خرید کاربران مهمان نمایش داده می‌شود"
+
+#: woocommerce-ac.php:897
+msgid "<br>In compliance with GDPR, add a message on the Checkout page to inform Guest users of how their data is being used.<br><i>For example: Your email address will help us support your shopping experience throughout the site. Please check our Privacy Policy to see how we use your personal data.</i>"
+msgstr "<br>مطابق با GDPR، پیامی در صفحه پرداخت اضافه کنید تا کاربران مهمان از نحوه استفاده از اطلاعات‌شان مطلع شوند.<br><i>برای مثال: آدرس ایمیل شما به ما کمک می‌کند تا تجربه خرید شما را در سراسر سایت پشتیبانی کنیم. لطفاً برای اطلاع از نحوه استفاده ما از داده‌های شخصی‌تان، سیاست حریم خصوصی ما را بررسی کنید.</i>"
+
+#: woocommerce-ac.php:902
+msgid "Message to be displayed for registered users when tracking their carts."
+msgstr "پیامی که هنگام پیگیری سبد خرید کاربران ثبت‌نام‌شده نمایش داده می‌شود."
+
+#: woocommerce-ac.php:906
+msgid "<br>In compliance with GDPR, add a message on the Shop & Product pages to inform Registered users of how their data is being used.<br><i>For example: Please check our Privacy Policy to see how we use your personal data.</i>"
+msgstr "<br>مطابق با GDPR، پیامی در صفحات فروشگاه و محصول اضافه کنید تا کاربران ثبت‌نام‌شده از نحوه استفاده از اطلاعات‌شان مطلع شوند.<br><i>برای مثال: لطفاً برای اطلاع از نحوه استفاده ما از داده‌های شخصی‌تان، سیاست حریم خصوصی ما را بررسی کنید.</i>"
+
+#: woocommerce-ac.php:911
+msgid "Allow the visitor to opt out of cart tracking."
+msgstr "اجازه دهید بازدیدکننده بتواند از پیگیری سبد خرید انصراف دهد."
+
+#: woocommerce-ac.php:915
+msgid "<br>In compliance with GDPR, allow the site visitor (guests & registered users) to opt out from cart tracking. This message will be displayed in conjunction with the GDPR message above.</i>"
+msgstr "<br>مطابق با GDPR، به بازدیدکننده سایت (مهمان و کاربر ثبت‌نام‌شده) اجازه دهید از پیگیری سبد خرید انصراف دهد. این پیام همراه با پیام GDPR بالا نمایش داده خواهد شد.</i>"
+
+#: woocommerce-ac.php:920
+msgid "Message to be displayed when the user chooses to opt out of cart tracking."
+msgstr "پیامی که هنگام انصراف کاربر از پیگیری سبد خرید نمایش داده می‌شود."
+
+#: woocommerce-ac.php:924
+msgid "<br>Message to be displayed when the user chooses to opt out of cart tracking.</i>"
+msgstr "<br>پیامی که هنگام انصراف کاربر از پیگیری سبد خرید نمایش داده می‌شود.</i>"
+
+#: woocommerce-ac.php:928
+msgid "Coupon Settings"
+msgstr "تنظیمات کد تخفیف"
+
+#: woocommerce-ac.php:934
+msgid "Delete Coupons Automatically"
+msgstr "حذف خودکار کدهای تخفیف"
+
+#: woocommerce-ac.php:938
+msgid "Enable this setting if you want to completely remove the expired and used coupon code automatically every 15 days."
+msgstr "اگر می‌خواهید کدهای تخفیف منقضی‌شده و استفاده‌شده هر ۱۵ روز یک‌بار به‌طور خودکار و کامل حذف شوند، این تنظیم را فعال کنید."
+
+#: woocommerce-ac.php:942
+msgid "Delete Coupons Manually"
+msgstr "حذف دستی کدهای تخفیف"
+
+#: woocommerce-ac.php:946
+msgid "If you want to completely remove the expired and used coupon code now then click on \"Delete\" button."
+msgstr "اگر می‌خواهید کدهای تخفیف منقضی‌شده و استفاده‌شده را همین حالا و به‌طور کامل حذف کنید، روی دکمه «حذف» کلیک کنید."
+
+#: woocommerce-ac.php:951
+msgid "Rules to exclude capturing abandoned carts"
+msgstr "قوانین استثنا برای ثبت سبدهای خرید رهاشده"
+
+#: woocommerce-ac.php:958
+msgid "Do not capture abandoned carts for these IP Addresses:"
+msgstr "سبدهای خرید رهاشده را برای این آدرس‌های IP ثبت نکن:"
+
+#: woocommerce-ac.php:962
+msgid "<br>The carts abandoned from these IP addresses will not be tracked by the plugin. Accepts wildcards, e.g 192.168.* will block all IP addresses which starts from &quot;192.168&quot;. Separate IP addresses with commas."
+msgstr "<br>سبدهای خرید رهاشده از این آدرس‌های IP توسط افزونه پیگیری نخواهند شد. از حروف عام (wildcard) پشتیبانی می‌کند، برای مثال 192.168.* تمام آدرس‌های IP که با &quot;192.168&quot; شروع می‌شوند را مسدود می‌کند. آدرس‌های IP را با کاما از هم جدا کنید."
+
+#: woocommerce-ac.php:967
+msgid "Do not capture abandoned carts for these email addresses:"
+msgstr "سبدهای خرید رهاشده را برای این آدرس‌های ایمیل ثبت نکن:"
+
+#: woocommerce-ac.php:971
+msgid "<br>Carts that are abandoned using these email addresses will not be tracked by the plugin. *Separate email addresses with commas."
+msgstr "<br>سبدهای خرید رهاشده‌ای که با این آدرس‌های ایمیل ثبت شده‌اند توسط افزونه پیگیری نخواهند شد. *آدرس‌های ایمیل را با کاما از هم جدا کنید."
+
+#: woocommerce-ac.php:976
+msgid "Do not capture abandoned carts for email addresses from these domains:"
+msgstr "سبدهای خرید رهاشده را برای آدرس‌های ایمیل این دامنه‌ها ثبت نکن:"
+
+#: woocommerce-ac.php:980
+msgid "<br>The carts abandoned from email addresses with these domains will not be tracked by the plugin."
+msgstr "<br>سبدهای خرید رهاشده‌ای که با آدرس‌های ایمیل این دامنه‌ها ثبت شده‌اند توسط افزونه پیگیری نخواهند شد."
+
+#: woocommerce-ac.php:985
+msgid "Do not capture carts from countries:"
+msgstr "سبدهای خرید را از این کشورها ثبت نکن:"
+
+#: woocommerce-ac.php:989
+msgid "<br>The carts abandoned from these countries will not be tracked by the plugin."
+msgstr "<br>سبدهای خرید رهاشده از این کشورها توسط افزونه پیگیری نخواهند شد."
+
+#: woocommerce-ac.php:999
+msgid "Settings for abandoned cart recovery emails"
+msgstr "تنظیمات ایمیل‌های بازیابی سبد خرید رهاشده"
+
+#: woocommerce-ac.php:1006
+msgid "\"From\" Name"
+msgstr "نام «فرستنده»"
+
+#: woocommerce-ac.php:1015
+msgid "\"From\" Address"
+msgstr "آدرس «فرستنده»"
+
+#: woocommerce-ac.php:1024
+msgid "Send Reply Emails to"
+msgstr "ارسال ایمیل‌های پاسخ به"
+
+#: woocommerce-ac.php:1033
+msgid "UTM parameters to be added to all the links in reminder emails"
+msgstr "پارامترهای UTM که به تمام لینک‌های ایمیل‌های یادآوری اضافه می‌شوند"
+
+#: woocommerce-ac.php:1037
+msgid "UTM parameters that should be added to all the links in reminder emails."
+msgstr "پارامترهای UTM که باید به تمام لینک‌های ایمیل‌های یادآوری اضافه شوند."
+
+#: woocommerce-ac.php:1042
+msgid "Auto login WordPress users coming to the site using reminder email links"
+msgstr "ورود خودکار کاربران وردپرس که از طریق لینک ایمیل یادآوری وارد سایت می‌شوند"
+
+#: woocommerce-ac.php:1046
+msgid "Should users registered on the site be auto logged in when they click a link in the reminder emails?"
+msgstr "آیا کاربران ثبت‌نام‌شده در سایت هنگام کلیک روی لینک ایمیل‌های یادآوری، به‌طور خودکار وارد شوند؟"
+
+#: woocommerce-ac.php:1241
+msgid "Abandoned cart cut off time should be numeric and has to be greater than 0."
+msgstr "زمان قطع سبد خرید رهاشده باید عددی و بزرگ‌تر از ۰ باشد."
+
+#: woocommerce-ac.php:1259
+msgid "Automatically Delete Abandoned Orders after X days has to be greater than 0."
+msgstr "مقدار «حذف خودکار سفارش‌های رهاشده پس از X روز» باید بزرگ‌تر از ۰ باشد."
+
+#: woocommerce-ac.php:1571
+msgid "Upgrade to Pro!"
+msgstr "ارتقا به پرو!"
+
+#: woocommerce-ac.php:2555
+msgid "Dashboard"
+msgstr "داشبورد"
+
+#: woocommerce-ac.php:2569
+msgid "Email Templates"
+msgstr "قالب‌های ایمیل"
+
+#: woocommerce-ac.php:2583
+msgid "Recovered Orders"
+msgstr "سفارش‌های بازیابی‌شده"
+
+#: woocommerce-ac.php:2590
+msgid "Product Report"
+msgstr "گزارش محصول"
+
+#: woocommerce-ac.php:2685
+msgid "Please enter a valid email."
+msgstr "لطفاً یک ایمیل معتبر وارد کنید."
+
+#: woocommerce-ac.php:2686
+msgid "Abandoned Cart Reminder"
+msgstr "یادآوری سبد خرید رهاشده"
+
+#: woocommerce-ac.php:2687
+msgid "Test email is not sent as the email body is empty."
+msgstr "چون متن ایمیل خالی است، ایمیل آزمایشی ارسال نشد."
+
+#: woocommerce-ac.php:2689
+msgid "Email has been sent successfully."
+msgstr "ایمیل با موفقیت ارسال شد."
+
+#: woocommerce-ac.php:2752
+msgid "Are you sure you want delete the expired and used coupons created by Abandonment Cart Lite for WooCommerce Plugin?"
+msgstr "آیا مطمئن هستید که می‌خواهید کدهای تخفیف منقضی‌شده و استفاده‌شده ایجادشده توسط افزونه سبد خرید رهاشده برای ووکامرس را حذف کنید؟"
+
+#: woocommerce-ac.php:2894
+msgid "You do not have sufficient permissions to access this page."
+msgstr "شما دسترسی کافی برای مشاهده این صفحه را ندارید."
+
+#: woocommerce-ac.php:2898
+msgid "WooCommerce - Abandon Cart Lite"
+msgstr "ووکامرس - سبد خرید رهاشده (رایگان)"
+
+#: woocommerce-ac.php:2970
+msgid "The Abandoned cart has been successfully deleted."
+msgstr "سبد خرید رهاشده با موفقیت حذف شد."
+
+#: woocommerce-ac.php:2972
+msgid "All Abandoned Carts have been successfully deleted."
+msgstr "همه سبدهای خرید رهاشده با موفقیت حذف شدند."
+
+#: woocommerce-ac.php:2974
+msgid "All Visitor carts have been successfully deleted."
+msgstr "همه سبدهای خرید بازدیدکنندگان با موفقیت حذف شدند."
+
+#: woocommerce-ac.php:2976
+msgid "All Guest carts have been successfully deleted."
+msgstr "همه سبدهای خرید مهمان با موفقیت حذف شدند."
+
+#: woocommerce-ac.php:2978
+msgid "All Registered carts have been deleted."
+msgstr "همه سبدهای خرید کاربران ثبت‌نام‌شده حذف شدند."
+
+#: woocommerce-ac.php:2989
+msgid "The Template has been successfully deleted."
+msgstr "قالب با موفقیت حذف شد."
+
+#: woocommerce-ac.php:3033
+msgid "General Settings"
+msgstr "تنظیمات عمومی"
+
+#: woocommerce-ac.php:3036
+msgid "Email Sending Settings"
+msgstr "تنظیمات ارسال ایمیل"
+
+#: woocommerce-ac.php:3056
+#: woocommerce-ac.php:3066
+msgid "Change settings for sending email notifications to Customers, to Admin etc."
+msgstr "تنظیمات ارسال اطلاع‌رسانی ایمیلی به مشتریان، مدیر و غیره را تغییر دهید."
+
+#: woocommerce-ac.php:3093
+msgid "The list below shows all Abandoned Carts which have remained in cart for a time higher than the \"Cart abandoned cut-off time\" setting."
+msgstr "فهرست زیر تمام سبدهای خرید رهاشده‌ای را نشان می‌دهد که مدت زمان بیشتری از تنظیم «زمان قطع سبد خرید رهاشده» در سبد باقی مانده‌اند."
+
+#: woocommerce-ac.php:3135
+msgid "All "
+msgstr "همه "
+
+#. translators: Users.
+#: woocommerce-ac.php:3140
+msgid "Registered %s"
+msgstr "%s ثبت‌نام‌شده"
+
+#. translators: Users.
+#: woocommerce-ac.php:3146
+msgid "Guest %s"
+msgstr "%s مهمان"
+
+#: woocommerce-ac.php:3152
+msgid "Carts without Customer Details"
+msgstr "سبدهای خرید بدون جزئیات مشتری"
+
+#: woocommerce-ac.php:3173
+msgid "Add email templates at different intervals to maximize the possibility of recovering your abandoned carts."
+msgstr "برای افزایش احتمال بازیابی سبدهای خرید رهاشده، قالب‌های ایمیل را در بازه‌های زمانی مختلف اضافه کنید."
+
+#: woocommerce-ac.php:3329
+msgid "The Email Template has been successfully added. In order to start sending this email to your customers, please activate it."
+msgstr "قالب ایمیل با موفقیت اضافه شد. برای شروع ارسال این ایمیل به مشتریان خود، لطفاً آن را فعال کنید."
+
+#: woocommerce-ac.php:3339
+msgid "There was a problem adding the email template. Please contact the plugin author via <a href= \"https://wordpress.org/support/plugin/woocommerce-abandoned-cart\">support forum</a>."
+msgstr "در افزودن قالب ایمیل مشکلی رخ داد. لطفاً از طریق <a href= \"https://wordpress.org/support/plugin/woocommerce-abandoned-cart\">انجمن پشتیبانی</a> با نویسنده افزونه تماس بگیرید."
+
+#: woocommerce-ac.php:3351
+msgid "The Email Template has been successfully updated."
+msgstr "قالب ایمیل با موفقیت به‌روزرسانی شد."
+
+#: woocommerce-ac.php:3361
+msgid "There was a problem updating the email template. Please contact the plugin author via <a href= \"https://wordpress.org/support/plugin/woocommerce-abandoned-cart\">support forum</a>."
+msgstr "در به‌روزرسانی قالب ایمیل مشکلی رخ داد. لطفاً از طریق <a href= \"https://wordpress.org/support/plugin/woocommerce-abandoned-cart\">انجمن پشتیبانی</a> با نویسنده افزونه تماس بگیرید."
+
+#: woocommerce-ac.php:3370
+msgid "Add New Template"
+msgstr "افزودن قالب جدید"
+
+#: woocommerce-ac.php:3442
+msgid "The Report below shows how many Abandoned Carts we were able to recover for you by sending automatic emails to encourage shoppers."
+msgstr "گزارش زیر نشان می‌دهد که چند سبد خرید رهاشده را با ارسال ایمیل‌های خودکار برای تشویق خریداران توانستیم برای شما بازیابی کنیم."
+
+#: woocommerce-ac.php:3493
+msgid "Start Date:"
+msgstr "تاریخ شروع:"
+
+#: woocommerce-ac.php:3495
+msgid "End Date:"
+msgstr "تاریخ پایان:"
+
+#. translators: Abandoned & recovered numbers and order totals.
+#: woocommerce-ac.php:3515
+msgid "During the selected range <strong>%1$d</strong> carts totaling <strong>%2$s</strong> were abandoned. We were able to recover <strong>%3$d</strong> of them, which led to an extra <strong>%4$s</strong>"
+msgstr "در بازه انتخاب‌شده، <strong>%1$d</strong> سبد خرید به ارزش کل <strong>%2$s</strong> رها شدند. ما توانستیم <strong>%3$d</strong> مورد از آن‌ها را بازیابی کنیم که منجر به <strong>%4$s</strong> درآمد اضافه شد"
+
+#. translators: Abandoned Order ID.
+#: woocommerce-ac.php:3540
+msgid "Abandoned Order #%s Details"
+msgstr "جزئیات سفارش رهاشده #%s"
+
+#: woocommerce-ac.php:3548
+msgid "Line Total"
+msgstr "جمع ردیف"
+
+#: woocommerce-ac.php:3777
+msgid "Billing Details"
+msgstr "جزئیات صورتحساب"
+
+#: woocommerce-ac.php:3778
+msgid "Name:"
+msgstr "نام:"
+
+#: woocommerce-ac.php:3781
+#: woocommerce-ac.php:3802
+msgid "Address:"
+msgstr "آدرس:"
+
+#: woocommerce-ac.php:3792
+msgid "Email:"
+msgstr "ایمیل:"
+
+#: woocommerce-ac.php:3796
+msgid "Phone:"
+msgstr "تلفن:"
+
+#: woocommerce-ac.php:3801
+msgid "Shipping Details"
+msgstr "جزئیات ارسال"
+
+#: woocommerce-ac.php:3811
+msgid "Shipping Address same as Billing Address"
+msgstr "آدرس ارسال همان آدرس صورتحساب است"
+
+#: woocommerce-ac.php:3824
+msgid "Shipping Charges"
+msgstr "هزینه ارسال"
+
+#: woocommerce-ac.php:3897
+msgid "Template Name:"
+msgstr "نام قالب:"
+
+#: woocommerce-ac.php:3907
+msgid "Enter a template name for reference"
+msgstr "برای مرجع، یک نام قالب وارد کنید"
+
+#: woocommerce-ac.php:3913
+msgid "Subject:"
+msgstr "موضوع:"
+
+#: woocommerce-ac.php:3923
+msgid "Enter the subject that should appear in the email sent"
+msgstr "موضوعی که باید در ایمیل ارسالی نمایش داده شود را وارد کنید"
+
+#: woocommerce-ac.php:3929
+msgid "Email Body:"
+msgstr "متن ایمیل:"
+
+#: woocommerce-ac.php:3956
+msgid "Message to be sent in the reminder email."
+msgstr "پیامی که در ایمیل یادآوری ارسال می‌شود."
+
+#: woocommerce-ac.php:3983
+msgid "Use WooCommerce Template Style:"
+msgstr "استفاده از استایل قالب ووکامرس:"
+
+#: woocommerce-ac.php:4006
+msgid "Email Template Header Text: "
+msgstr "متن سربرگ قالب ایمیل: "
+
+#: woocommerce-ac.php:4021
+msgid "Enter the header which will appear in the abandoned WooCommerce email sent. This is only applicable when only used when \"Use WooCommerce Template Style:\" is checked."
+msgstr "سربرگی که در ایمیل رهاسازی ووکامرس ارسالی نمایش داده می‌شود را وارد کنید. این گزینه فقط زمانی که «استفاده از استایل قالب ووکامرس» فعال باشد کاربرد دارد."
+
+#: woocommerce-ac.php:4027
+msgid "Send this email:"
+msgstr "ارسال این ایمیل:"
+
+#: woocommerce-ac.php:4069
+msgid "after cart is abandoned."
+msgstr "پس از رهاشدن سبد خرید."
+
+#: woocommerce-ac.php:4076
+msgid "Send a test email to:"
+msgstr "ارسال ایمیل آزمایشی به:"
+
+#: woocommerce-ac.php:4085
+msgid "Enter the email id to which the test email needs to be sent."
+msgstr "آدرس ایمیلی که ایمیل آزمایشی باید به آن ارسال شود را وارد کنید."
+
+#: woocommerce-ac.php:4099
+msgid "Update Changes"
+msgstr "به‌روزرسانی تغییرات"
+
+#: woocommerce-ac.php:4103
+msgid "Save Changes"
+msgstr "ذخیره تغییرات"
+
+#: woocommerce-ac.php:4125
+msgid "If you love <strong>Abandoned Cart Lite for WooCommerce</strong>, then please leave us a <a href=\"https://wordpress.org/support/plugin/woocommerce-abandoned-cart/reviews/?rate=5#new-post\" target=\"_blank\" class=\"ac-rating-link\" data-rated=\"Thanks :)\">★★★★★</a> rating. Thank you in advance. :)"
+msgstr "اگر <strong>افزونه سبد خرید رهاشده رایگان برای ووکامرس</strong> را دوست دارید، لطفاً یک امتیاز <a href=\"https://wordpress.org/support/plugin/woocommerce-abandoned-cart/reviews/?rate=5#new-post\" target=\"_blank\" class=\"ac-rating-link\" data-rated=\"Thanks :)\">★★★★★</a> برای ما ثبت کنید. از پیش سپاسگزاریم. :)"
+
+#: woocommerce-ac.php:4387
+#: woocommerce-ac.php:4422
+msgid "Men's Formal Shoes"
+msgstr "کفش رسمی مردانه"
+
+#: woocommerce-ac.php:4394
+#: woocommerce-ac.php:4429
+msgid "Woman's Hand Bags"
+msgstr "کیف دستی زنانه"
+
+#: woocommerce-ac.php:4862
+msgid "Select countries"
+msgstr "انتخاب کشورها"
+
+#: build/wcal-blocks-gdpr-email-compliance/block.json
+#: src/wcal-blocks-gdpr-email-compliance/block.json
+msgctxt "block title"
+msgid "GDPR Email Compliance"
+msgstr "انطباق GDPR ایمیل"
