@@ -837,8 +837,11 @@ if ( ! class_exists( 'Wcal_Cron' ) ) {
 		public static function wcal_remove_cart_for_mutiple_templates( $wcal_cart_id, $time_to_send_template_after, $template_id ) {
 			global $wpdb;
 
-			$wcal_get_last_email_sent_time_results_list = $wpdb->get_results( // phpcs:ignore
-				"SELECT * FROM `" . $wpdb->prefix . "ac_sent_history_lite` WHERE abandoned_order_id = $wcal_cart_id ORDER BY `sent_time` DESC LIMIT 1" // phpcs:ignore
+			$wcal_get_last_email_sent_time_results_list = $wpdb->get_results(
+				$wpdb->prepare(
+					"SELECT * FROM `" . $wpdb->prefix . "ac_sent_history_lite` WHERE abandoned_order_id = %d ORDER BY `sent_time` DESC LIMIT 1",
+					absint( $wcal_cart_id )
+				)
 			);
 
 			if ( count( $wcal_get_last_email_sent_time_results_list ) > 0 ) {
